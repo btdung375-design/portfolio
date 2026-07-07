@@ -19,9 +19,19 @@ export default function Hero() {
             id="hero-content"
           >
             {/* Tagline */}
-            <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#2563EB]/8 border border-[#2563EB]/15 text-[11px] font-bold tracking-widest text-[#2563EB] uppercase mb-6 shadow-sm">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB] animate-pulse"></span>
-              PRODUCT OWNER / BUSINESS ANALYST
+            <div className="flex flex-wrap gap-2 mb-6">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#2563EB]/8 border border-[#2563EB]/15 text-[11px] font-bold tracking-widest text-[#2563EB] uppercase shadow-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB] animate-pulse"></span>
+                BUSINESS ANALYST
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#10B981]/8 border border-[#10B981]/15 text-[11px] font-bold tracking-widest text-[#10B981] uppercase shadow-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
+                PRODUCT OWNER
+              </div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#8B5CF6]/8 border border-[#8B5CF6]/15 text-[11px] font-bold tracking-widest text-[#8B5CF6] uppercase shadow-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#8B5CF6]"></span>
+                BUSINESS INTELLIGENCE
+              </div>
             </div>
 
             {/* Main Name */}
@@ -122,7 +132,7 @@ export default function Hero() {
                   </div>
                   <h4 className="text-sm font-bold tracking-wide">BÙI TIẾN DŨNG</h4>
                   <p className="text-[10px] text-[#94A3B8] tracking-widest mt-1 uppercase">
-                    Product Owner / Business Analyst
+                    Business Analyst / Product Owner / Business Intelligence
                   </p>
                   <div className="flex gap-2.5 mt-4">
                     <div className="p-1.5 rounded-md bg-[#2563EB]/25 text-blue-400 border border-blue-500/20">

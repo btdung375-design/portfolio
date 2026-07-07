@@ -46,7 +46,7 @@ export default function About() {
                     </div>
                     <h4 className="text-sm font-bold tracking-wide font-serif">BÙI TIẾN DŨNG</h4>
                     <p className="text-[10px] text-[#94A3B8] tracking-widest mt-0.5 uppercase">
-                      Product Owner / Business Analyst
+                      Business Analyst / Product Owner / Business Intelligence
                     </p>
                   </div>
                 </div>
