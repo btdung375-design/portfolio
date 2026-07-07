@@ -305,65 +305,12 @@ export function CriminalCaseContent({ activeChapter }: CriminalCaseContentProps)
                 <Bell className="w-4 h-4 text-[#991B1B] animate-bounce" />
                 Mẫu Tin nhắn Cảnh báo Thực Tế Gửi Tới Telegram
               </div>
-              {/* Telegram UI mockup */}
-              <div className="flex gap-3 items-start">
-                {/* Phone mockup */}
-                <div className="w-52 shrink-0 bg-[#1a1a2e] rounded-2xl overflow-hidden border border-slate-700 shadow-lg">
-                  {/* Telegram header */}
-                  <div className="bg-[#2b5278] px-3 py-2 flex items-center gap-2">
-                    <div className="w-6 h-6 rounded-full bg-orange-500 flex items-center justify-center text-white text-[9px] font-bold">C</div>
-                    <div>
-                      <div className="text-white text-[10px] font-bold">Crime detected</div>
-                      <div className="text-blue-300 text-[8px]">bot</div>
-                    </div>
-                  </div>
-                  {/* Messages */}
-                  <div className="p-2 space-y-1.5 bg-[#0d1117]">
-                    {/* Message 1 */}
-                    <div className="bg-[#1e3a5f] rounded-xl rounded-tl-sm px-2.5 py-1.5 max-w-[90%]">
-                      <div className="text-[10px] text-slate-200">🔫 Registered user with weapon</div>
-                      <div className="text-[8px] text-slate-400 text-right mt-0.5">02:34</div>
-                    </div>
-                    {/* Message 2 - Alert details */}
-                    <div className="bg-[#1e3a5f] rounded-xl rounded-tl-sm px-2.5 py-1.5 max-w-[90%]">
-                      <div className="text-[10px] font-bold text-red-400">🚨 ARMED UNKNOWN INDIVIDUAL DETECTED!</div>
-                      <div className="text-[9px] text-slate-300 mt-0.5">🔫 Gun</div>
-                      <div className="text-[9px] text-slate-300">📍 None, None, None</div>
-                      <div className="text-[9px] text-slate-300">🕐 2025-10-22 02:34:42</div>
-                      <div className="text-[8px] text-slate-400 text-right mt-0.5">02:34</div>
-                    </div>
-                    {/* Image message */}
-                    <div className="max-w-[90%] rounded-xl overflow-hidden border border-slate-700">
-                      <img
-                        src="/images/message.png"
-                        alt="Ảnh hiện trường đính kèm cảnh báo Telegram"
-                        className="w-full object-cover"
-                      />
-                      <div className="bg-[#1e3a5f] px-2.5 py-1.5">
-                        <div className="text-[9px] text-slate-300">🔫 Armed unknown individual</div>
-                        <div className="text-[8px] text-slate-400 text-right mt-0.5">02:34</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Explanation */}
-                <div className="flex-1 space-y-2 text-xs text-[#475569]">
-                  <p className="font-semibold text-[#0F172A] text-[11px]">Hệ thống tự động gửi 3 tin nhắn liên tiếp:</p>
-                  <div className="space-y-2">
-                    <div className="flex gap-2">
-                      <span className="w-4 h-4 rounded-full bg-blue-100 text-blue-700 text-[9px] font-bold flex items-center justify-center shrink-0">1</span>
-                      <p className="text-[11px]"><strong className="text-slate-800">Thông báo loại vũ khí</strong> — "Registered user with weapon"</p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span className="w-4 h-4 rounded-full bg-red-100 text-red-700 text-[9px] font-bold flex items-center justify-center shrink-0">2</span>
-                      <p className="text-[11px]"><strong className="text-slate-800">Chi tiết cảnh báo</strong> — Loại vũ khí, tọa độ vị trí, timestamp chính xác</p>
-                    </div>
-                    <div className="flex gap-2">
-                      <span className="w-4 h-4 rounded-full bg-slate-200 text-slate-700 text-[9px] font-bold flex items-center justify-center shrink-0">3</span>
-                      <p className="text-[11px]"><strong className="text-slate-800">Ảnh hiện trường</strong> — Frame camera thực tế kèm caption nhận dạng đối tượng</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="flex justify-center">
+                <img
+                  src="/images/message.png"
+                  alt="Ảnh chụp màn hình tin nhắn cảnh báo thực tế trên Telegram"
+                  className="max-w-[260px] w-full rounded-2xl border border-slate-300 shadow-md"
+                />
               </div>
             </div>
           </div>
