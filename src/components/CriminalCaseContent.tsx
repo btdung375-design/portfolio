@@ -254,7 +254,7 @@ export function CriminalCaseContent({ activeChapter }: CriminalCaseContentProps)
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">
+              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
                 <h5 className="font-bold text-xs text-[#0F172A] flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-blue-600" />
                   Màn Hình Live Monitor
@@ -262,6 +262,18 @@ export function CriminalCaseContent({ activeChapter }: CriminalCaseContentProps)
                 <p className="text-[11px] text-[#64748B]">
                   Hiển thị khung hình camera trực tiếp từ OpenCV, vẽ trực quan bounding box quanh khuôn mặt và vũ khí, ghi đè nhãn ID và Threat score thời gian thực.
                 </p>
+                {/* Evidence screenshot */}
+                <div className="mt-2 rounded-lg overflow-hidden border border-slate-300 bg-black relative group cursor-zoom-in">
+                  <img
+                    src="/images/criminal-live-monitor.jpg"
+                    alt="Live monitor - AI phát hiện đối tượng cầm dao với bounding box vàng"
+                    className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/60 px-2 py-1">
+                    <span className="text-[9px] font-mono text-yellow-400 font-bold">Unknown (unknown)</span>
+                    <span className="text-[9px] text-slate-300 ml-2">· AI phát hiện vũ khí — Bounding box đang hoạt động</span>
+                  </div>
+                </div>
               </div>
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1">

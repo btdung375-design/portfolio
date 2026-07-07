@@ -24,10 +24,10 @@ export default function Projects() {
       num: "02",
       title: "Criminal Detection System (Hệ thống Phát hiện Hành vi Nguy hiểm)",
       period: "09/2025 - 01/2026",
-      role: "Nghiên cứu giải pháp · Thiết kế luồng dữ liệu · Phối hợp kỹ thuật",
+      role: "Nghiên cứu giải pháp · Phối hợp kỹ thuật",
       intro: "Nghiên cứu giải pháp giám sát an ninh tự động tích hợp mô hình Machine Learning (YOLOv8 & DeepFace) để phát hiện vũ khí và nhận dạng nghi phạm truy nã qua camera thời gian thực. Đóng vai trò phân tích yêu cầu nghiệp vụ, định nghĩa cấp độ đe dọa (Threat Assessment), phác họa sơ đồ luồng dữ liệu (DFD) và viết mã mô-đun Python xử lý thiết bị tính toán (CUDA/DirectML), lập báo cáo cảnh báo tự động gửi tới Telegram/Discord.",
       hasCaseStudy: true,
-      demoUrl: "https://github.com/butterkingminh2-sketch/Criminal-Detection",
+      demoUrl: undefined,
       tags: ["Phân tích An ninh", "YOLOv8 & DeepFace", "Gửi cảnh báo Webhook", "Xử lý ảnh Python"]
     },
     {
