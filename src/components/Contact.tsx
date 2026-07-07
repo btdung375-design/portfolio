@@ -11,18 +11,43 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!formState.name || !formState.email || !formState.message) return;
 
     setIsSubmitting(true);
-    // Simulate API form submission
-    setTimeout(() => {
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "f27393e3-917e-4fd9-a18d-5ddcddd55b72",
+          name: formState.name,
+          email: formState.email,
+          subject: formState.subject,
+          message: formState.message
+        })
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        setSubmitSuccess(true);
+        setFormState({ name: "", email: "", subject: "Hỏi về cơ hội thực tập Business Analyst", message: "" });
+      } else {
+        setErrorMessage(result.message || "Đã xảy ra lỗi khi gửi thư.");
+      }
+    } catch (err) {
+      setErrorMessage("Không thể kết nối đến máy chủ gửi thư. Vui lòng thử lại sau.");
+    } finally {
       setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormState({ name: "", email: "", subject: "Hỏi về cơ hội thực tập Business Analyst", message: "" });
-    }, 1000);
+    }
   };
 
   return (
@@ -93,7 +118,7 @@ export default function Contact() {
                   <div>
                     <h4 className="text-sm font-bold text-white">Gửi lời nhắn thành công!</h4>
                     <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-                      Cảm ơn anh/chị. Em sẽ kiểm tra hòm thư và liên hệ lại sớm nhất có thể qua thông tin được cung cấp.
+                      Cảm ơn anh/chị. Dũng sẽ kiểm tra hòm thư và liên hệ lại sớm nhất có thể qua thông tin được cung cấp.
                     </p>
                   </div>
                   <button
@@ -165,6 +190,13 @@ export default function Contact() {
                       className="w-full px-4 py-3 text-sm bg-white/5 border border-white/10 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-colors resize-none"
                     ></textarea>
                   </div>
+
+                  {errorMessage && (
+                    <div className="p-3 text-xs rounded-xl bg-red-500/10 border border-red-500/20 text-red-400 flex items-center gap-2">
+                      <AlertCircle className="w-4 h-4 shrink-0" />
+                      <span>{errorMessage}</span>
+                    </div>
+                  )}
 
                   <button
                     type="submit"
