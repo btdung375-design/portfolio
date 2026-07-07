@@ -16,9 +16,9 @@ export default function Header() {
 
   const navLinks = [
     { name: "Giới thiệu", href: "#about" },
+    { name: "Mục tiêu", href: "#objective" },
     { name: "Kỹ năng", href: "#skills" },
     { name: "Dự án", href: "#projects" },
-    { name: "Mục tiêu", href: "#objective" },
     { name: "Chứng chỉ & CLB", href: "#certificates" },
     { name: "Liên hệ", href: "#contact" },
   ];
