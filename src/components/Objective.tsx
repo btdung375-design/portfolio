@@ -33,7 +33,7 @@ export default function Objective() {
                     <Calendar className="w-3.5 h-3.5" />
                     Ngắn hạn (1-12 tháng)
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-[#0F172A] mt-0.5">Thực tập sinh Business Analyst</h3>
+                  <h3 className="font-serif text-lg font-bold text-[#0F172A] mt-0.5">Thực tập sinh Business Analyst / Product Owner</h3>
                 </div>
               </div>
 
@@ -69,12 +69,12 @@ export default function Objective() {
                     <Compass className="w-3.5 h-3.5" />
                     Dài hạn (2-3 năm tới)
                   </div>
-                  <h3 className="font-serif text-lg font-bold text-[#0F172A] mt-0.5">Senior Business Analyst</h3>
+                  <h3 className="font-serif text-lg font-bold text-[#0F172A] mt-0.5">Senior Product Owner / Business Analyst</h3>
                 </div>
               </div>
 
               <p className="text-sm text-[#475569] leading-relaxed text-justify">
-                Tích lũy kinh nghiệm thực chiến và nâng cao năng lực chuyên môn để trở thành một Business Analyst chuyên nghiệp
+                Tích lũy kinh nghiệm thực chiến và nâng cao năng lực chuyên môn để trở thành một Product Owner hoặc Business Analyst chuyên nghiệp
                 trong tương lai. Có khả năng tự dẫn dắt và chịu trách nhiệm độc lập cho các dự án phần mềm
                 phức tạp, tạo ra các giải pháp công nghệ tối ưu, mang lại giá trị thiết thực và có hiệu suất cao cho doanh nghiệp.
               </p>

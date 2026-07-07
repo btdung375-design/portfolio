@@ -47,18 +47,7 @@ export default function Hero() {
             {/* Core Capabilities - under the name */}
             <div className="flex flex-col gap-2 mb-6">
               <div className="flex flex-wrap gap-2.5">
-                {["Thiết kế hệ thống", "Phân tích dữ liệu", "Mô hình hóa quy trình"].map((skill, idx) => (
-                  <span
-                    key={idx}
-                    className="px-3.5 py-1 rounded-md bg-[#FAF9F6] border border-[#E2E8F0] text-xs font-semibold text-[#475569] shadow-sm flex items-center gap-1.5"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]"></span>
-                    {skill}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-wrap gap-2.5">
-                {["Coding", "Tự động hóa"].map((skill, idx) => (
+                {["Thiết kế hệ thống", "Phân tích dữ liệu", "Mô hình hóa quy trình", "Coding"].map((skill, idx) => (
                   <span
                     key={idx}
                     className="px-3.5 py-1 rounded-md bg-[#FAF9F6] border border-[#E2E8F0] text-xs font-semibold text-[#475569] shadow-sm flex items-center gap-1.5"

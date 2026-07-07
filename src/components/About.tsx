@@ -74,7 +74,7 @@ export default function About() {
                 doanh nghiệp.
               </p>
               <p>
-                Tôi định hướng trở thành Business Analyst để đứng ở điểm giao thoa đó — làm cầu nối giữa khách hàng, bộ phận kinh doanh và
+                Tôi định hướng trở thành Business Analyst, Product Owner hoặc chuyên viên Business Intelligence để đứng ở điểm giao thoa đó — làm cầu nối giữa khách hàng, bộ phận kinh doanh và
                 đội ngũ lập trình viên. Tôi mong muốn chuyển những gì doanh nghiệp cần thành yêu cầu rõ ràng để đội kỹ thuật
                 có thể triển khai đúng và đủ. Với tinh thần trách nhiệm và ham học hỏi, tôi muốn đảm bảo không một thông tin nào bị
                 hiểu sai trong quá trình chuyển đổi đó.
