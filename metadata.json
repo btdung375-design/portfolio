@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Bui Tien Dung - BA Intern Portfolio",
+  "description": "Portfolio cá nhân của Bùi Tiến Dũng - Thực tập sinh Business Analyst (BA) sở hữu tư duy hybrid giữa Kinh doanh và Công nghệ.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
