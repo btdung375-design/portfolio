@@ -106,9 +106,12 @@ export default function Contact() {
           {/* Right Column: Contact form or instant CTA message */}
           <div className="lg:col-span-7" id="contact-form-container">
             <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-white/10">
-              <h3 className="font-serif text-lg font-bold text-white mb-6">
+              <h3 className="font-serif text-lg font-bold text-white mb-1">
                 Gửi lời nhắn nhanh cho Dũng
               </h3>
+              <p className="text-xs text-slate-400 mb-6">
+                (Gửi trực tiếp đến Gmail)
+              </p>
 
               {submitSuccess ? (
                 <div className="p-6 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-center space-y-4">
