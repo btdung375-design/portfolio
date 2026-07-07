@@ -6,7 +6,7 @@ export default function Contact() {
   const [formState, setFormState] = useState({
     name: "",
     email: "",
-    subject: "Hỏi về cơ hội thực tập Business Analyst",
+    subject: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -39,7 +39,7 @@ export default function Contact() {
       const result = await response.json();
       if (result.success) {
         setSubmitSuccess(true);
-        setFormState({ name: "", email: "", subject: "Hỏi về cơ hội thực tập Business Analyst", message: "" });
+        setFormState({ name: "", email: "", subject: "", message: "" });
       } else {
         setErrorMessage(result.message || "Đã xảy ra lỗi khi gửi thư.");
       }
