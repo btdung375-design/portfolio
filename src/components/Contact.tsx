@@ -50,7 +50,7 @@ export default function Contact() {
               {[
                 { icon: Phone, text: "0869825383", label: "Điện thoại", href: "tel:0869825383" },
                 { icon: Mail, text: "btdung375@gmail.com", label: "Địa chỉ Email", href: "mailto:btdung375@gmail.com" },
-                { icon: MapPin, text: "24, Kim Nỗ, Đông Anh, Hà Nội", label: "Địa điểm sinh sống", href: "https://maps.google.com/?q=24,+Kim+Nỗ,+Đông+Anh,+Hà+Nội" },
+                { icon: MapPin, text: "Kim Nỗ, Đông Anh, Hà Nội", label: "Địa điểm sinh sống", href: "https://maps.google.com/?q=Kim+Nỗ,+Đông+Anh,+Hà+Nội" },
               ].map((info, idx) => {
                 const Icon = info.icon;
                 return (
