@@ -36,7 +36,7 @@ export default function Header() {
         {/* Brand Brand */}
         <a href="#" className="flex items-center gap-1 group">
           <span className="font-serif text-xl font-bold tracking-tight text-[#0F172A] group-hover:text-[#2563EB] transition-colors">
-            Dũng Bùi Tiến
+            Bùi Tiến Dũng
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB]"></span>
         </a>
