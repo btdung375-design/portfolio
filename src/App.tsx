@@ -41,7 +41,7 @@ export default function App() {
               06 · Châm Ngôn Làm Việc
             </span>
             <blockquote className="font-serif text-xl md:text-2xl font-semibold italic text-[#0F172A] leading-relaxed max-w-2xl mx-auto">
-              “Nhiệm vụ của người phân tích không chỉ là vẽ sơ đồ quy trình, mà là làm cầu nối thấu hiểu vấn đề thực tế để cùng team Tech kiến tạo nên giải pháp công nghệ tối ưu nhất.”
+              “Khó khăn chỉ là phép thử cho lòng kiên trì. Nỗ lực hết mình trong mọi hoàn cảnh, bền bỉ vượt qua thử thách để hoàn thiện bản thân mỗi ngày.”
             </blockquote>
             <div className="w-12 h-0.5 bg-[#2563EB]/40 mx-auto mt-6"></div>
           </div>
