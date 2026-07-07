@@ -80,7 +80,7 @@ export default function Certificates() {
               </h2>
             </div>
 
-
+            <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-4">
                 <div className="flex items-center gap-3.5 border-b border-[#F1F5F9] pb-4">
                   <div className="w-11 h-11 rounded-xl bg-emerald-500/8 flex items-center justify-center text-emerald-600 shrink-0">
