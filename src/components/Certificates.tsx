@@ -1,4 +1,4 @@
-import { Award, BookOpen, Users, Video, GraduationCap, Check } from "lucide-react";
+import { Award, BookOpen, Users, Video, GraduationCap, Check, ShoppingBag } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Certificates() {
@@ -87,9 +87,7 @@ export default function Certificates() {
                     <Users className="w-5.5 h-5.5" />
                   </div>
                   <div>
-                    <span className="text-[9px] font-bold text-emerald-600 tracking-widest uppercase block">
-                      Extracurricular Leadership
-                    </span>
+                    {/* Tag removed */}
                     <h3 className="font-serif text-base font-bold text-[#0F172A]">
                       Thành viên CLB Truyền thông VOS
                     </h3>
@@ -130,6 +128,64 @@ export default function Certificates() {
                       ].map((bullet, i) => (
                         <li key={i} className="flex items-start gap-2 text-[#475569]">
                           <Check className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5 stroke-[3]" />
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Online Sales Experience */}
+              <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-4">
+                <div className="flex items-center gap-3.5 border-b border-[#F1F5F9] pb-4">
+                  <div className="w-11 h-11 rounded-xl bg-blue-500/8 flex items-center justify-center text-blue-600 shrink-0">
+                    <ShoppingBag className="w-5.5 h-5.5" />
+                  </div>
+                  <div>
+                    <span className="text-[9px] font-bold text-blue-600 tracking-widest uppercase block">
+                      Kinh doanh &amp; Bán hàng
+                    </span>
+                    <h3 className="font-serif text-base font-bold text-[#0F172A]">
+                      Livestream Creator &amp; Tư vấn khách hàng
+                    </h3>
+                  </div>
+                </div>
+
+                <div className="space-y-3.5 text-xs leading-relaxed text-[#475569]">
+                  <p className="text-justify font-medium">
+                    Hợp tác cùng các nhãn hàng để thực hiện các phiên livestream giới thiệu sản phẩm trên các nền tảng mạng xã hội (TikTok, Facebook). Trực tiếp tương tác trực tuyến, tư vấn tính năng và giải đáp thắc mắc của người xem để thúc đẩy tỷ lệ mua hàng.
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-3 py-1">
+                    <div className="p-3 rounded-xl bg-blue-50/50 border border-blue-100 flex items-center gap-3">
+                      <Users className="w-5 h-5 text-blue-600 shrink-0" />
+                      <div>
+                        <span className="text-xs font-black text-blue-800 block">100+ Phiên Live</span>
+                        <span className="text-[9px] text-[#64748B] font-bold uppercase tracking-wider">Đứng ống kính</span>
+                      </div>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-emerald-50/50 border border-emerald-100 flex items-center gap-3">
+                      <Award className="w-5 h-5 text-emerald-600 shrink-0" />
+                      <div>
+                        <span className="text-xs font-black text-emerald-800 block">Real-time</span>
+                        <span className="text-[9px] text-[#64748B] font-bold uppercase tracking-wider">Tương tác</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2 pt-2 border-t border-[#F1F5F9]">
+                    <span className="text-[10px] font-extrabold text-[#0F172A] tracking-wider uppercase block">
+                      Ý nghĩa bổ trợ:
+                    </span>
+                    <ul className="space-y-1.5 text-[11px]">
+                      {[
+                        "Rèn luyện kỹ năng giao tiếp linh hoạt, diễn đạt thông tin mạch lạc, dễ hiểu và tự tin trình bày trước đám đông.",
+                        "Khả năng lắng nghe, nhanh chóng nắm bắt nhu cầu và phản hồi (Feedback) của khách hàng để điều chỉnh nội dung tư vấn phù hợp."
+                      ].map((bullet, i) => (
+                        <li key={i} className="flex items-start gap-2 text-[#475569]">
+                          <Check className="w-4 h-4 text-blue-500 shrink-0 mt-0.5 stroke-[3]" />
                           <span>{bullet}</span>
                         </li>
                       ))}
