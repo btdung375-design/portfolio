@@ -39,7 +39,7 @@ export default function Contact() {
                 07 · Liên hệ &amp; Kết nối
               </span>
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-white tracking-tight mt-1">
-                Kết Nối Với Em
+                Kết Nối Với Dũng
               </h2>
               <p className="text-sm text-slate-400 mt-3 leading-relaxed text-justify">
                 Cảm ơn Quý nhà tuyển dụng và doanh nghiệp đã dành thời gian xem qua hồ sơ năng lực trực tuyến của em. Em rất mong muốn được trao đổi chi tiết hơn qua một buổi phỏng vấn trực tiếp.
@@ -82,7 +82,7 @@ export default function Contact() {
           <div className="lg:col-span-7" id="contact-form-container">
             <div className="p-6 md:p-8 rounded-2xl bg-white/5 border border-white/10">
               <h3 className="font-serif text-lg font-bold text-white mb-6">
-                Gửi lời nhắn nhanh cho em
+                Gửi lời nhắn nhanh cho Dũng
               </h3>
 
               {submitSuccess ? (

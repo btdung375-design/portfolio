@@ -80,21 +80,7 @@ export default function Certificates() {
               </h2>
             </div>
 
-            <div className="space-y-6">
-              {/* Academic background summary */}
-              <div className="p-5 rounded-2xl border border-dashed border-[#CBD5E1] flex gap-4 items-center bg-[#FAF9F6]/50">
-                <div className="w-10 h-10 rounded-full bg-slate-100 flex items-center justify-center text-[#475569] shrink-0">
-                  <GraduationCap className="w-5.5 h-5.5" />
-                </div>
-                <div>
-                  <h4 className="text-xs font-extrabold text-[#0F172A] uppercase tracking-widest">Học vấn &amp; Điểm số</h4>
-                  <p className="text-sm text-[#475569] mt-0.5 font-semibold">
-                    Đại học Quốc gia Hà Nội — GPA tích lũy: <span className="text-[#2563EB] font-bold">3.0 / 4.0</span>
-                  </p>
-                </div>
-              </div>
 
-              {/* VOS Media Club achievements */}
               <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0] shadow-sm space-y-4">
                 <div className="flex items-center gap-3.5 border-b border-[#F1F5F9] pb-4">
                   <div className="w-11 h-11 rounded-xl bg-emerald-500/8 flex items-center justify-center text-emerald-600 shrink-0">
