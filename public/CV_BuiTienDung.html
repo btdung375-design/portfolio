@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Bùi Tiến Dũng - Product Owner / Business Analyst</title>
+  <!-- Google Fonts: Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #0F172A;
+      --secondary: #2563EB;
+      --text: #334155;
+      --text-light: #64748B;
+      --bg-sidebar: #FAF9F6;
+      --accent: #E0F2FE;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      color: var(--text);
+      line-height: 1.4;
+      background-color: #f3f4f6;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* A4 Page styling for screen and print */
+    .page {
+      background: white;
+      width: 210mm;
+      height: 297mm;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media print {
+      body {
+        background: none;
+        margin: 0;
+      }
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+        page-break-after: always;
+      }
+    }
+
+    /* Header Block */
+    .header-container {
+      display: flex;
+      align-items: center;
+      height: 125px;
+      padding: 0 40px;
+      border-bottom: 1px solid #E2E8F0;
+    }
+
+    .avatar-box {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid var(--primary);
+      margin-right: 25px;
+      flex-shrink: 0;
+    }
+
+    .avatar-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .title-box {
+      background-color: var(--accent);
+      border: 1px solid #BAE6FD;
+      flex-grow: 1;
+      height: 95px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 25px;
+      border-radius: 8px;
+    }
+
+    .title-box h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 0.5px;
+    }
+
+    .title-box p {
+      font-size: 11px;
+      color: var(--secondary);
+      font-weight: 600;
+      margin-top: 2px;
+      letter-spacing: 1px;
+    }
+
+    /* Main Content Layout */
+    .content-container {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    /* Left Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: var(--bg-sidebar);
+      border-right: 1px solid #E2E8F0;
+      padding: 15px 25px 15px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    /* Right Main Area */
+    .main-content {
+      flex-grow: 1;
+      padding: 15px 40px 15px 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* Sections Styles */
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 3px;
+      margin-bottom: 10px;
+    }
+
+    /* Contact Details */
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 11.5px;
+      margin-bottom: 8px;
+    }
+
+    .contact-item svg {
+      width: 13px;
+      height: 13px;
+      color: var(--secondary);
+      flex-shrink: 0;
+    }
+
+    .contact-item a {
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+      color: var(--secondary);
+    }
+
+    /* Skills list styling */
+    .skill-group {
+      margin-bottom: 10px;
+    }
+
+    .skill-group-title {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 3px;
+    }
+
+    .skill-item-text {
+      font-size: 10.5px;
+      color: var(--text);
+      margin-bottom: 2px;
+      padding-left: 8px;
+      position: relative;
+    }
+
+    .skill-item-text::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--secondary);
+    }
+
+    /* Certificates styling */
+    .cert-item {
+      font-size: 11px;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .cert-year {
+      font-weight: 700;
+      color: var(--secondary);
+    }
+
+    /* Career Objective Block */
+    .objective-text {
+      font-size: 11.5px;
+      color: var(--text);
+      text-align: justify;
+      line-height: 1.4;
+    }
+
+    /* Education Block */
+    .edu-item {
+      margin-bottom: 3px;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 2px;
+    }
+
+    .edu-name {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .edu-date {
+      font-size: 10.5px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .edu-detail {
+      font-size: 11px;
+      color: var(--text);
+    }
+
+    .edu-gpa {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--secondary);
+      margin-top: 1px;
+    }
+
+    /* Project block styling */
+    .project-item {
+      margin-bottom: 8px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+
+    .project-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .project-date {
+      font-size: 10.5px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .project-role {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+
+    .project-desc-list {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+
+    .project-desc-item {
+      font-size: 11px;
+      color: var(--text);
+      margin-bottom: 2px;
+      position: relative;
+      text-align: justify;
+      line-height: 1.35;
+    }
+
+    .project-desc-item::before {
+      content: "-";
+      position: absolute;
+      left: -10px;
+      color: var(--text-light);
+    }
+
+    /* Activities block */
+    .activity-item {
+      margin-bottom: 8px;
+    }
+
+    .activity-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2px;
+    }
+
+    .activity-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .activity-date {
+      font-size: 10.5px;
+      color: var(--text-light);
+      font-weight: 500;
+    }
+
+    .activity-role {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: var(--secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+
+    .activity-desc-list {
+      list-style-type: none;
+      padding-left: 10px;
+    }
+
+    .activity-desc-item {
+      font-size: 11px;
+      color: var(--text);
+      margin-bottom: 2px;
+      position: relative;
+      text-align: justify;
+      line-height: 1.35;
+    }
+
+    .activity-desc-item::before {
+      content: "-";
+      position: absolute;
+      left: -10px;
+      color: var(--text-light);
+    }
+
+    /* Custom print configurations to prevent breaks */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+    <!-- Header Area -->
+    <div class="header-container">
+      <div class="avatar-box">
+        <!-- Circular avatar loaded locally -->
+        <img src="images/hero-avatar.jpg" alt="Bùi Tiến Dũng">
+      </div>
+      <div class="title-box">
+        <h1>BÙI TIẾN DŨNG</h1>
+        <p>BUSINESS ANALYST / PRODUCT OWNER / BUSINESS INTELLIGENCE</p>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content-container">
+      <!-- Left Column / Sidebar -->
+      <div class="sidebar">
+        <!-- Personal Info -->
+        <div>
+          <div class="section-title">Thông tin</div>
+          
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Nam</span>
+          </div>
+          
+
+          
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <a href="tel:0869825383">0869825383</a>
+          </div>
+          
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <a href="mailto:btdung375@gmail.com">btdung375@gmail.com</a>
+          </div>
+          
+          <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>Kim Nỗ, Đông Anh, Hà Nội</span>
+          </div>
+
+          <div class="contact-item" style="margin-top: 10px; font-weight: 500;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <a href="https://portfolio-alpha-ashen-52.vercel.app/" target="_blank">portfolio-alpha-ashen-52.vercel.app</a>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div>
+          <div class="section-title">Kỹ năng</div>
+          
+          <div class="skill-group">
+            <div class="skill-group-title">Business Analysis</div>
+            <div class="skill-item-text">Thu thập & phân tích yêu cầu</div>
+            <div class="skill-item-text">Vẽ quy trình BPMN & Flowchart</div>
+            <div class="skill-item-text">Thiết kế ERD & mô hình dữ liệu</div>
+            <div class="skill-item-text">Viết BRD, User Story & Acceptance</div>
+            <div class="skill-item-text">Hiểu quy trình SDLC (Agile/Scrum)</div>
+          </div>
+
+          <div class="skill-group">
+            <div class="skill-group-title">Tin học văn phòng</div>
+            <div class="skill-item-text">Word, Excel, Canva, Power BI</div>
+          </div>
+
+
+
+          <div class="skill-group">
+            <div class="skill-group-title">Công nghệ & Ngôn ngữ</div>
+            <div class="skill-item-text">SQL (truy vấn, kết nối dữ liệu)</div>
+            <div class="skill-item-text">Python (lập trình logic cơ bản)</div>
+            <div class="skill-item-text">Tiếng Anh (giao tiếp trôi chảy)</div>
+          </div>
+        </div>
+
+        <!-- Certificates -->
+        <div>
+          <div class="section-title">Chứng chỉ</div>
+          
+          <div class="cert-item">
+            <span class="cert-year">2025:</span> Tiếng Anh B2 Vstep (ĐHQGHN)
+          </div>
+          <div class="cert-item">
+            <span class="cert-year">2025:</span> Communication & Networks
+          </div>
+          <div class="cert-item">
+            <span class="cert-year">2023:</span> Chứng chỉ Python (Codelearn)
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column / Main Content -->
+      <div class="main-content">
+        <!-- Career Objective -->
+        <div>
+          <div class="section-title">Mục tiêu nghề nghiệp</div>
+          <p class="objective-text">
+            Sinh viên năm cuối ngành Quản trị Kinh doanh và Công nghệ - Đại học Quốc gia Hà Nội, định hướng trở thành Business Analyst / Product Owner / Business Intelligence. Có khả năng chuyển hóa các yêu cầu kinh doanh phức tạp thành tài liệu kỹ thuật, sơ đồ quy trình và giải pháp phần mềm tối ưu. Mong muốn đóng góp vào quy trình phát triển sản phẩm thông qua tư duy dữ liệu và sự am hiểu về kỹ thuật.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div>
+          <div class="section-title">Học vấn</div>
+          <div class="edu-item">
+            <div class="edu-header">
+              <span class="edu-name">Trường Quản trị và Kinh doanh (HSB) - ĐHQGHN</span>
+              <span class="edu-date">10/2023 - 05/2027</span>
+            </div>
+            <div class="edu-detail">Chuyên ngành: Quản trị Kinh doanh và Công nghệ (Sinh viên năm 4)</div>
+          </div>
+        </div>
+
+        <!-- Professional Projects -->
+        <div>
+          <div class="section-title">Dự án tiêu biểu</div>
+
+          <!-- Project 1: Criminal Detection -->
+          <div class="project-item">
+            <div class="project-header">
+              <span class="project-title">Criminal Detection System (Phát hiện hành vi nguy hiểm)</span>
+              <span class="project-date">09/2025 - 01/2026</span>
+            </div>
+            <div class="project-role">Nghiên cứu giải pháp · Phối hợp kỹ thuật</div>
+            <ul class="project-desc-list">
+              <li class="project-desc-item">Phân tích yêu cầu nghiệp vụ, định nghĩa cấp độ đe dọa (Threat Assessment) cho hệ thống nhận diện vũ khí và nghi phạm qua camera thời gian thực (YOLOv8 & DeepFace).</li>
+              <li class="project-desc-item">Hỗ trợ viết mã mô-đun Python xử lý tính toán (CUDA) và lập cấu hình gửi báo cáo cảnh báo tự động qua Telegram/Discord Webhook.</li>
+            </ul>
+          </div>
+
+          <!-- Project 2: Library System -->
+          <div class="project-item">
+            <div class="project-header">
+              <span class="project-title">Hệ thống Quản lý Mượn/Trả Sách Thư Viện</span>
+              <span class="project-date">06/2026 - 07/2026</span>
+            </div>
+            <div class="project-role">Tự thiết kế & Phân tích nghiệp vụ</div>
+            <ul class="project-desc-list">
+              <li class="project-desc-item">Khảo sát nghiệp vụ thực tế thư viện, soạn thảo tài liệu đặc tả yêu cầu BRD xác định rõ mục tiêu, phạm vi và các yêu cầu chức năng.</li>
+              <li class="project-desc-item">Thiết kế sơ đồ quy trình nghiệp vụ BPMN 2.0 và viết các User Story chuẩn Agile kèm tiêu chí nghiệm thu Acceptance Criteria.</li>
+            </ul>
+          </div>
+
+          <!-- Project 3: Mixue GO -->
+          <div class="project-item">
+            <div class="project-header">
+              <span class="project-title">Mixue GO (Đo lường mật độ khách real-time & tích điểm)</span>
+              <span class="project-date">05/2026 - 06/2026</span>
+            </div>
+            <div class="project-role">Nghiên cứu · Thiết kế · Lập trình sản phẩm</div>
+            <ul class="project-desc-list">
+              <li class="project-desc-item">Nghiên cứu thực tế hành vi xếp hàng tại các cơ sở Mixue Hà Nội để tìm giải pháp tối ưu trải nghiệm khách hàng.</li>
+              <li class="project-desc-item">Thiết kế và lập trình ứng dụng web tích hợp bản đồ định vị cửa hàng, biểu đồ mật độ thời gian thực (LIVE) và hệ thống tích điểm đổi quà bằng QR code.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Activities -->
+        <div>
+          <div class="section-title">Hoạt động ngoại khóa & Kinh nghiệm</div>
+
+          <!-- Activity 1: VOS -->
+          <div class="activity-item">
+            <div class="activity-header">
+              <span class="activity-title">Thành viên CLB Truyền thông VOS</span>
+              <span class="activity-date">08/2023 - 07/2025</span>
+            </div>
+            <div class="activity-role">Sản xuất nội dung & Sáng tạo truyền thông</div>
+            <ul class="activity-desc-list">
+              <li class="activity-desc-item">Đảm nhiệm vai trò sản xuất nội dung số chính, phối hợp lên ý tưởng và chạy các chiến dịch lớn cho CLB và nhà trường. Sáng tạo nội dung video đạt 100k - 300k lượt xem.</li>
+            </ul>
+          </div>
+
+          <!-- Activity 2: Livestream Sales -->
+          <div class="activity-item">
+            <div class="activity-header">
+              <span class="activity-title">Livestream Creator & Tư vấn khách hàng</span>
+              <span class="activity-date">10/2023 - 07/2025</span>
+            </div>
+            <div class="activity-role">Kinh doanh & Bán hàng (Tự do)</div>
+            <ul class="activity-desc-list">
+              <li class="activity-desc-item">Hợp tác cùng các nhãn hàng thực hiện các phiên livestream giới thiệu sản phẩm trực tuyến trên MXH, trực tiếp tư vấn và giải đáp thắc mắc của người xem để thúc đẩy chuyển đổi doanh số.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
