@@ -67,14 +67,14 @@ export default function About() {
               <p>
                 Tôi là sinh viên năm cuối chuyên ngành{" "}
                 <strong className="text-[#0F172A] font-semibold">Quản trị Kinh doanh và Công nghệ</strong> tại{" "}
-                <strong className="text-[#0F172A] font-semibold">Trường Quản trị và Kinh doanh (HSB) – ĐHQGHN</strong>.
+                <strong className="text-[#0F172A] font-semibold">Trường Quản trị và Kinh doanh (HSB) – Đại học Quốc gia Hà Nội</strong>.
                 Chương trình học trang bị cho tôi lăng kính kép từ hai hướng song song: quản trị doanh nghiệp (marketing,
                 tài chính, nghiên cứu thị trường, chiến lược) và công nghệ thông tin (cơ sở dữ liệu, thiết kế hệ thống,
                 lập trình, phân tích dữ liệu) — với trọng tâm là ứng dụng công nghệ để giải quyết bài toán thực tế của
                 doanh nghiệp.
               </p>
               <p>
-                Tôi định hướng trở thành Business Analyst, Product Owner hoặc chuyên viên Business Intelligence để đứng ở điểm giao thoa đó — làm cầu nối giữa khách hàng, bộ phận kinh doanh và
+                Tôi định hướng trở thành <strong className="text-[#0F172A] font-semibold">Business Analyst, Product Owner hoặc chuyên viên Business Intelligence</strong> để đứng ở điểm giao thoa đó — làm cầu nối giữa khách hàng, bộ phận kinh doanh và
                 đội ngũ lập trình viên. Tôi mong muốn chuyển những gì doanh nghiệp cần thành yêu cầu rõ ràng để đội kỹ thuật
                 có thể triển khai đúng và đủ. Với tinh thần trách nhiệm và ham học hỏi, tôi muốn đảm bảo không một thông tin nào bị
                 hiểu sai trong quá trình chuyển đổi đó.

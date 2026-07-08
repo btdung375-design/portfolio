@@ -41,7 +41,7 @@ export default function Hero() {
 
             {/* University & Degree */}
             <div className="text-base md:text-lg font-semibold text-[#1E293B] mb-5">
-              Sinh viên năm 4 · Quản trị Kinh doanh &amp; Công nghệ · ĐHQGHN
+              Sinh viên năm 4 · Quản trị Kinh doanh &amp; Công nghệ · Đại học Quốc gia Hà Nội
             </div>
 
             {/* Core Capabilities - under the name */}
